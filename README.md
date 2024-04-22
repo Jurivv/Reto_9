@@ -41,22 +41,22 @@ if __name__ == "__main__":
 ```
 2.De los retos anteriores selecione 3 funciones y escribalas con argumentos no definidos (*args).
 ```python
-def listado(*args)-> int:
-  cuadrado : int = 0
-  for num in args:
+def listado(*args)-> int: # Definimos variable
+  cuadrado : int = 0 # inicializamos el programa
+  for num in args: # para los numeros que hay en args aplicar el cuadrado
     cuadrado=num**2
   return cuadrado
-if __name__ == "__main__":
-    a = int(input("Ingrese numero : "))
+if __name__ == "__main__": 
+    a = int(input("Ingrese numero : ")) 
     print("el cuadrado del numero es " + str(listado(a)))
 
 ```
 ```python
-def factorial(*args)-> int:
-   for num in args:
+def factorial(*args)-> int: # Definimos variable
+   for num in args: # para los numeros que hay en args aplicar la condicion impuesta
        a = 1
        b = 1
-       while a <= num:
+       while a <= num:# se hace un bucle para poder realizar el factorial del numero
         b = b * a
         a += 1
    return b
@@ -69,13 +69,13 @@ if __name__ == "__main__":
 
 ```
 ```python
-def ASCII(*args)-> int:
-     for num in args:
+def ASCII(*args)-> int: #definimos l variable
+     for num in args: #para los numeros que hay en args aplicar la condicion impuesta en a,la cual es convertir un entero a codigo ASCII
       a=(chr(num))
      return a
 if __name__ == "__main__":
       a = int(input("Digite un numero entero"))
-      if a > 97 and a < 122:
+      if a > 97 and a < 122: #establecemos un intervalo donde tiene sentido el código ASCII
         print("El numero entero corresponde a una vocal minuscula en el codigo ASCII, es:"+(ASCII(a)))
       else:
         print("No corresponde a una vocal minuscula en el codigo ASCII")
